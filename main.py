@@ -40,10 +40,10 @@ def happiness_review():
 def user_input():
   while True:
     user_choice = input("What status would you like to check? Hunger/Happiness/Energy/Health: ")
-    if user_choice == "Hunger":
+    if user_choice.lower() == "hunger":
       hunger_review()
       break
-    elif user_choice == "Happiness":
+    elif user_choice.lower() == "happiness":
       happiness_review()
       break
     else:
